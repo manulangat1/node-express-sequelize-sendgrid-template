@@ -1,0 +1,26 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "This is a template for node,express,sequelize and sendgrid projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manulangat1/node-express-sequelize-sendgrid-template.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Postgresql",
+    "Sequelize",
+    "Sendgrid"
+  ],
+  "author": "Emmanuel Kipchirchir Langat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manulangat1/node-express-sequelize-sendgrid-template/issues"
+  },
+  "homepage": "https://github.com/manulangat1/node-express-sequelize-sendgrid-template#readme"
+}
