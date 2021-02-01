@@ -10,7 +10,6 @@ chai.use(chaiHttp)
 chai.should()
 
 
-describe('Authentication',() => {
     describe('POST /login', () => {
         // try logging in a user 
         it ("should terminate with an error",(done) => {
@@ -41,7 +40,7 @@ describe('Authentication',() => {
         })
     })
     // test unsucessfull login
-    describe('POST /LOgin',() => {
+    describe('POST /Login',() => {
         it('Should give an error', (done) => {
             const body = {
                 "email":"emmanule@gmail.com",
@@ -57,5 +56,4 @@ describe('Authentication',() => {
                 })
         })
     })
-})
 
