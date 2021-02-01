@@ -1,18 +1,18 @@
 require('dotenv').config()
 module.exports = {
   "development": {
-    "username": "",
-    "password": "",
+    "username": "manulangat",
+    "password": "3050manu",
     "database": "tem_node",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   test: {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "manulangat",
+    "password": "3050manu",
+    "database": "tem_node_test",
     "host": "127.0.0.1",
-    "dialect": "postges"
+    "dialect": "postgres"
   },
   production: {
     "username": "root",
