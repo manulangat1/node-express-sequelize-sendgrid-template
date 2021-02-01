@@ -41,7 +41,7 @@ describe('Authentication',() => {
         })
     })
     // test unsucessfull login
-    describe('POST /LOgin',() => {
+    describe('POST /Login',() => {
         it('Should give an error', (done) => {
             const body = {
                 "email":"emmanule@gmail.com",
