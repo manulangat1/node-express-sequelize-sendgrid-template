@@ -10,7 +10,6 @@ chai.use(chaiHttp)
 chai.should()
 
 
-describe('Authentication',() => {
     describe('POST /login', () => {
         // try logging in a user 
         it ("should terminate with an error",(done) => {
@@ -57,5 +56,4 @@ describe('Authentication',() => {
                 })
         })
     })
-})
 
