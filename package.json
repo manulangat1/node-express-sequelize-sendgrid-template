@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon --exec babel-node ./server/server.js",
-    "test": "nyc --reporter=lcov --reporter=text mocha --require  @babel/register 'server/**/**test.js' --exit",
+    "test": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --require  @babel/register 'server/**/**test.js' --exit",
     "coverage": "nyc npm run test && nyc report --reporter=text-lcov --reporter=lcov | node ./node_modules/coveralls/bin/coveralls.js --verbose"
   },
   "repository": {
@@ -21,6 +21,9 @@
   ],
   "author": "Emmanuel Kipchirchir Langat",
   "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
   "bugs": {
     "url": "https://github.com/manulangat1/node-express-sequelize-sendgrid-template/issues"
   },
