@@ -8,10 +8,7 @@ module.exports = {
     "dialect": "postgres"
   },
   test: {
-    "username": "manulangat",
-    "password": "3050manu",
-    "database": "tem_node_test",
-    "host": "127.0.0.1",
+    "use_env_variable":"DATABASE_URL",
     "dialect": "postgres"
   },
   production: {
