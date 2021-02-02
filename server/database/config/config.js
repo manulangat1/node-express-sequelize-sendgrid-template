@@ -8,8 +8,7 @@ module.exports = {
     "dialect": "postgres"
   },
   test: {
-    "use_env_variable":"TEST_URL",
-    "dialect": "postgres"
+    "use_env_variable":"TEST_URL"
   },
   production: {
     "username": "root",
