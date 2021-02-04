@@ -30,9 +30,9 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
     env:
-          NODE_ENV: ${{ secrets.NODE_ENV }}
-          TEST_URL: ${{ secrets.TEST_URL }}
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+          NODE_ENV: "test"
+          TEST_URL: "postgres://ccuugkroujilud:3d209d4c0f84c09d58fe9a342e26965368636b03e44440e553128e247467a0b4@ec2-52-45-140-104.compute-1.amazonaws.com:5432/d3fdheocs0u6s"
+          COVERALLS_REPO_TOKEN: "JOTR2JyivdpKGJMf8Oo8VCtcscxUTZ1il"
     # name: Coveralls
     # runs-on: ubuntu-latest
     # strategy:
