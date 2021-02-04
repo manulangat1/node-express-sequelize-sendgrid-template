@@ -10,7 +10,7 @@ module.exports = {
   test: {
     "use_env_variable":"TEST_URL",
     "dialect":"postgres",
-    "ssl": true
+    "dialectOptions": { "ssl": true },
   },
   production: {
     "username": "root",
