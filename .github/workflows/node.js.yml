@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -25,17 +25,23 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
-
-  coverage:
-    name: Coveralls
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x]
-          
-    steps:
-    - uses: coverallsapp/github-action@master
-      env:
-        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+    env:
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+          TEST_URL: ${{ secrets.TEST_URL }}
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+    # name: Coveralls
+    # runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     node-version: [12.x]
+          
+    # steps:
+    # - uses: coverallsapp/github-action@master
+    #   env:
+    #     COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+    #   with:
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
