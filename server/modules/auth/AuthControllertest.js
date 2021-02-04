@@ -24,22 +24,22 @@ describe('POST /login', () => {
     })
 })
 // test successfull login
-describe('SUCCES /login', () => {
-    it("should login a user",(done) => {
-        const body = {
-            "email":"emmanulthedeelope@gmail.com",
-            "password":"3050manu"
-        }
-        chai.request(app)
-            .post('/api/v1/login')
-            .send(body)
-            .end((err,res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                done()
-            })
-    })
-})
+// describe('SUCCES /login', () => {
+//     it("should login a user",(done) => {
+//         const body = {
+//             "email":"emmanulthedeelope@gmail.com",
+//             "password":"3050manu"
+//         }
+//         chai.request(app)
+//             .post('/api/v1/login')
+//             .send(body)
+//             .end((err,res) => {
+//                 res.should.have.status(200);
+//                 res.body.should.be.a('object');
+//                 done()
+//             })
+//     })
+// })
 // test unsucessfull login
 describe('POST /Login',() => {
     it('Should give an error', (done) => {
