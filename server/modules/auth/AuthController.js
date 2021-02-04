@@ -9,9 +9,7 @@ function omitPassword(user){
     return userWithoutPassword;
 }
 export default class AuthController {
-
     
-
     static async registerUser(req,res){
         try{
             const userexists =await UserService.checkUserExists(req.body.email)
